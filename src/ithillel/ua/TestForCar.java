@@ -10,6 +10,8 @@ public class TestForCar {
         randomCar.setCarType("randomCarType");
         randomCar.setCarWheel(carTestAttribute.getWheel());
 
+        System.out.println(randomCar);
+
 
     }
 }
