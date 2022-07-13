@@ -11,7 +11,7 @@ public class CarTest {
                 new Wheel("Nokian", 20),
                 new Wheel("Nokian", 20)
         });
-        car.setTransmission(new Transmission("Automate",6));
+        car.setTransmission(new Transmission("Automate", 6));
 
         System.out.println(car);
 
