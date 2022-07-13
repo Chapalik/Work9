@@ -1,51 +1,74 @@
 package ithillel.ua;
 
+
 public class Car {
-    private String carColor;
-    private String carType;
-    private String carEngine;
-    private String carTransmission;
-    private String[] carWheel;
 
-    public String getCarColor() {
-        return carColor;
+    private Engine engine;
+    private Wheel[] wheel;
+    private Transmission transmission;
+
+    private String model;
+    private int year;
+    private String label;
+
+    public Car(Engine engine, Wheel[] wheel, Transmission transmission, String model, int year, String label) {
+        this.engine = engine;
+        this.wheel = wheel;
+        this.transmission = transmission;
+        this.model = model;
+        this.year = year;
+        this.label = label;
     }
 
-    public void setCarColor(String carColor) {
-        this.carColor = carColor;
+    public Car(String model, int year, String label) {
+        this.model = model;
+        this.year = year;
+        this.label = label;
     }
 
-    public String getCarType() {
-        return carType;
+    public Engine getEngine() {
+        return engine;
     }
 
-    public void setCarType(String carType) {
-        this.carType = carType;
-    }
-
-    public String getCarEngine() {
-        return carEngine;
-    }
-
-    public void setCarEngine(String carEngine) {
-        this.carEngine = carEngine;
-    }
-
-    public String getCarTransmission() {
-        return carTransmission;
-    }
-
-    public void setCarTransmission(String carTransmission) {
-        this.carTransmission = carTransmission;
-    }
-
-    public String[] getCarWheel() {
-        return carWheel;
-    }
-
-    public void setCarWheel(String[] carWheel) {
-        this.carWheel = carWheel;
+    public void setEngine(Engine engine) {
+        this.engine = engine;
     }
 
 
+    public void setWheel(Wheel[] wheel) {
+        this.wheel = wheel;
+    }
+
+    public Transmission getTransmission() {
+        return transmission;
+    }
+
+    public void setTransmission(Transmission transmission) {
+        this.transmission = transmission;
+    }
+
+    public String getModel() {
+        return model;
+    }
+
+    public void setModel(String model) {
+        this.model = model;
+    }
+
+    public int getYear() {
+        return year;
+    }
+
+    public void setYear(int year) {
+        this.year = year;
+    }
+
+    public String getLabel() {
+        return label;
+    }
+
+    public void setLabel(String label) {
+        this.label = label;
+    }
 }
+

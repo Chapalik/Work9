@@ -1,31 +1,19 @@
 package ithillel.ua;
 
 public class CarTest {
-    private String Engine = "Engine";
-    private String Transmission = "Transmission";
-    private String[] Wheel = {"wheel1", "wheel2", "wheel3", "wheel4", "spareWheel"};
+    public static void main(String[] args) {
 
-    public String getEngine() {
-        return Engine;
-    }
+        Car car = new Car("Camry", 2022, "Toyota");
+        car.setEngine(new Engine("QWE2356", 260, 2.68F));
+        car.setWheel(new Wheel[]{
+                new Wheel("Nokian", 20),
+                new Wheel("Nokian", 20),
+                new Wheel("Nokian", 20),
+                new Wheel("Nokian", 20)
+        });
+        car.setTransmission(new Transmission("Automate",6));
 
-    public void setEngine(String engine) {
-        Engine = engine;
-    }
+        System.out.println(car);
 
-    public String getTransmission() {
-        return Transmission;
-    }
-
-    public void setTransmission(String transmission) {
-        Transmission = transmission;
-    }
-
-    public String[] getWheel() {
-        return Wheel;
-    }
-
-    public void setWheel(String[] wheel) {
-        Wheel = wheel;
     }
 }
